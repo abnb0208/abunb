@@ -158,36 +158,32 @@ export default function Resources() {
 
 // Category icons
 const CategoryIcon = ({ category }) => {
-  const getIcon = () => {
-    switch (category) {
-      case 'software':
-        return (
-          <svg className="w-24 h-24 text-tech-blue opacity-20" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z" />
-          </svg>
-        );
-      case 'document':
-        return (
-          <svg className="w-24 h-24 text-tech-green opacity-20" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
-          </svg>
-        );
-      case 'tutorial':
-        return (
-          <svg className="w-24 h-24 text-secondary opacity-20" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 4h2v5l-1-.75L9 9V4zm9 16H6V4h1v9l3-2.25L13 13V4h5v16z" />
-          </svg>
-        );
-      default:
-        return (
-          <svg className="w-24 h-24 text-gray-600 opacity-20" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7z" />
-          </svg>
-        );
-    }
-  };
-
-  return getIcon();
+  switch (category) {
+    case 'software':
+      return (
+        <svg className="w-24 h-24 text-tech-blue opacity-20" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z" />
+        </svg>
+      );
+    case 'document':
+      return (
+        <svg className="w-24 h-24 text-tech-green opacity-20" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
+        </svg>
+      );
+    case 'tutorial':
+      return (
+        <svg className="w-24 h-24 text-secondary opacity-20" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 4h2v5l-1-.75L9 9V4zm9 16H6V4h1v9l3-2.25L13 13V4h5v16z" />
+        </svg>
+      );
+    default:
+      return (
+        <svg className="w-24 h-24 text-gray-600 opacity-20" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7z" />
+        </svg>
+      );
+  }
 };
 
 // Categories data
